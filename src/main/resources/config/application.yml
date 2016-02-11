@@ -1,0 +1,25 @@
+spring:
+    jpa:
+            database: MYSQL # Specify the DBMS
+            show-sql: true  # Show or not log for each sql query
+            hibernate:  # Hibernate settings are prefixed with spring.jpa.hibernate.*
+                 ddl-auto: update
+                 dialect: org.hibernate.dialect.MySQL5Dialect
+                 naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+    messages:
+        basename: classpath:/i18n/messages
+    mvc:
+        favicon:
+            enabled: false
+    thymeleaf:
+        mode: XHTML
+
+security:
+    basic:
+        enabled: false
+
+logging:
+  level:
+    org.springframework: INFO
+  path: /var/log/R3/demo
