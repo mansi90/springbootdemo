@@ -1,0 +1,8 @@
+.gradle/
+*.iml
+*.ipr
+*.iws
+.idea/*
+src/main/resources/config/application-dev.yml
+build/
+out/
